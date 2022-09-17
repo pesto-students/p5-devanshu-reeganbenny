@@ -6,13 +6,16 @@
 
 
 function getNumber(){
-    return Math.floor(Math.random()*1000);  // returns a random number between 0 - 1000
+    // returns a random number between 0 - 1000
+    return Math.floor(Math.random()*1000);  
 }
 
 // Creating a Promise polyfill function
-let MyPromise = function(executor){
-    let onResolve;      // Store the callback function
-    let fulfilled = false;  // Whether the promise was fulfilled
+let MyPromisePolyfill = function(executor){
+     // Store the callback function
+    let onResolve;    
+    // Whether the promise was fulfilled 
+    let fulfilled = false;  
     let result = undefined;
 
     this.then = function(callback){ 
@@ -45,7 +48,7 @@ let MyPromise = function(executor){
 
 }
 
-let numCheck = new MyPromise((resolve, reject) => {
+let numCheck = new MyPromisePolyfill((resolve, reject) => {
     let randomNumber = getNumber();
     if(!(randomNumber%5 === 0)){
         resolve(randomNumber);

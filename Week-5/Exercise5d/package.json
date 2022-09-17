@@ -1,0 +1,16 @@
+{
+  "name": "exercise5d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node calculator.js"
+  },
+  "keywords": [],
+  "author": "Reegan Benny",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
