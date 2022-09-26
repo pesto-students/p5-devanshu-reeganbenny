@@ -16,7 +16,9 @@ function subArrayMaxSum(arr){
 }
 
 // test cases
-let arr = [1, 2, 3, 4];
-console.log(subArrayMaxSum(arr));
+
+console.log(subArrayMaxSum([1, 2, 3, 4]));
+// console.log(subArrayMaxSum([1, 2, 3, 4, -10]));
+// console.log(subArrayMaxSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
 
