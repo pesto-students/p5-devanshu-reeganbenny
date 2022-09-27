@@ -2,6 +2,9 @@
 * Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
 */
 
+// Time complexity - O(n)
+// Space Complexity - O(1) 
+
 function sort(arr){
     start = 0
     end= arr.length-1;
@@ -21,7 +24,7 @@ function sort(arr){
 }
 
 console.log(sort([0,2,1,0,2,1]));
-console.log(sort([1,1,1,0,0,0,2,2,2]));
+// console.log(sort([1,1,1,0,0,0,2,2,2]));
 // console.log(sort([]));
 // console.log(sort([0,1,0,1]));
 // console.log(sort([2,2,1,1]));
