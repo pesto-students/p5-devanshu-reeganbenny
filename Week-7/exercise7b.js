@@ -36,7 +36,7 @@ let rotate = 3;
 
 let list;
 for(let i=0; i<arrList.length; i++){
-    if(i === 0) list = new LinkedList(1);
+    if(i === 0) list = new LinkedList(arrList[i]);
     else{
         list.append(arrList[i]);
     }
