@@ -8,11 +8,11 @@ const LinkedList = require("./linkedList");
 // Function to create a cycle in linked List;
 LinkedList.prototype.createCycle = function(pos){
     let indexNode = null;
-    if(pos < 0){
+    if(pos < 1){
         indexNode = null;
     }
     let current = this.head;
-    let index = 0;
+    let index = 1;
     while(current.next != null){
         if(index === pos){
             indexNode = current;
