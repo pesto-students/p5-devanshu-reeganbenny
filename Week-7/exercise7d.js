@@ -1,7 +1,9 @@
 /*
 * Given an expression string x. Examine whether the pairs and the orders of“{“,”}”,”(“,”)”,”[“,”]” are correct in exp.
 */
-
+// Time complexity - O(n)
+// Space complexity - O(n)
+ 
 function isValid(s){
     let arr = [];
     let j = 0;
