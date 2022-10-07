@@ -1,7 +1,8 @@
 /*
 * Given a linked list of N nodes. The task is to check if the linked list has a loop. Linkedlist can contain self loop.
 */
-
+// Time complexity - O(n)
+// Space complexity - O(n)
 const LinkedList = require("./linkedList");
 
 // Function to create a cycle in linked List;
