@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(100 100 100);;
+    color: #a7fff6;
+    font-family: sans-serif;
+}
+
+.todo-container{
+    margin: auto;
+    text-align: center;
+    width: 350px;
+    min-width: 50vw;
+    margin-top: 30px;
+}
+
+.input-section{
+    background-color: rgb(63, 62, 62);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px #0000005e;
+}
+
+h1{
+    padding-bottom: 15px;
+}
+.input-section input{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 5px;
+    box-sizing:border-box;
+    outline: none;
+    background-color: rgb(63, 62, 62);
+    color: #a7fff6;
+}
+
+.input-section button{
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    width: 10%;
+    box-sizing: border-box;
+    padding: 9px;
+    border: none;
+}
+
+.input-section button:hover{
+    cursor: pointer;
+    background-color:#a7fff6;
+}
+
+.input-section button i{
+    font-size: 20px;
+}
+
+ul{
+    padding: 15px;
+    list-style: none;
+    text-align: left;
+}
+
+ul li{
+    display: flex;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    background-color:rgb(63, 62, 62);
+    box-shadow: 0 3px 5px #0000005e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+ul li .fa-circle-check{
+    color: #fbf8f8;
+    margin-right: 5px;
+}
+ul li .fa-circle-check:hover{
+    cursor: pointer;
+    color: #c6fc89;
+}
+
+ul li p {
+    flex:1;
+}
+
+ul li .fa-trash-can{
+    color: #ff6852;
+    text-align: right;
+}
+
+ul li .fa-trash-can:hover{
+    cursor: pointer;
+    color: #ff2200;
+}
+.completed{
+    opacity: 0.5;
+}
+
+.completed p {
+    text-decoration: line-through;
+}
+
+.completed .fa-circle-check{
+    color: green;
+}
+
