@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main div */
+
+#square{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#square > h1{
+    height: 24px;
+    position: absolute;
+    left: 130px;
+    top: 130px;
+}
+
+/* small square 1*/
+#square1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition-property: transform;
+    transition-duration: 2s;
+    transform-origin: 0% 0%;
+}
+
+/* small square 2*/
+#square2{
+    position: absolute;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: #ffff00;
+    transition-property: transform;
+    transition-duration: 2s;
+    transform-origin: 100% 0%;
+}
+
+/* small square 3*/
+#square3{
+    position: absolute;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    transition-property: transform;
+    transition-duration: 2s;
+    transform-origin: 0% 100%;
+}
+
+/* small square 4*/
+#square4{
+    position: absolute;
+    top:150px;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    transition-property: transform;
+    transition-duration: 2s;
+    transform-origin: 100% 100%;
+}
+
+/* transform square when hover over descendant div */
+#square:hover #square1{
+    transform: rotate(90deg);
+}
+
+#square:hover #square2{
+    transform: rotate(-90deg);
+}
+
+#square:hover #square3{
+    transform: rotate(-90deg);
+}
+
+#square:hover #square4{
+    transform: rotate(90deg);
+}

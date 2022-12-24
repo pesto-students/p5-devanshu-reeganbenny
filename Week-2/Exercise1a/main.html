@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise2.1</title>
+</head>
+<body>
+    <!-- header for the page -->
+     <header>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>- Lorem, ipsum dolor.</p>
+     </header>
+
+     <!-- Main content of the page -->
+     <div id="content">
+        <div id="article1">
+            <h2>
+                Lorem ipsum dolor
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Tenetur incidunt pariatur laborum 
+                repudiandae ea nisi similique quisquam 
+                minima temporibus praesentium! Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. Necessitatibus beatae velit 
+                illum sunt fuga ipsa cum esse officiis excepturi totam.
+                <a href="http://www.lipsum.com/" >
+                    read more..
+                </a>
+            </p>
+        </div>
+        <div id="image">
+            <div id="image-box">
+                <img src="https://picsum.photos/200" alt="Cover image"/>
+            </div>
+        </div>
+        <div id="article2">
+            <p>
+                <h2>
+                    Lorem ipsum dolor
+                </h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Tenetur incidunt pariatur laborum 
+                repudiandae ea nisi similique quisquam 
+                minima temporibus praesentium! Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. Necessitatibus beatae velit 
+                illum sunt fuga ipsa cum esse officiis excepturi totam.
+                <a href="http://www.lipsum.com/" >
+                    read more..
+                </a>
+            </p>
+        </div>
+        <div id="article3">
+            <h2>
+                Lorem ipsum dolor
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Tenetur incidunt pariatur laborum 
+                repudiandae ea nisi similique quisquam 
+                minima temporibus praesentium! Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. Necessitatibus beatae velit 
+                illum sunt fuga ipsa cum esse officiis excepturi totam.
+                <a href="http://www.lipsum.com/" >
+                    read more..
+                </a>
+            </p>
+        </div>
+        <div id="article4">
+            <h2>
+                Lorem ipsum dolor
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Tenetur incidunt pariatur laborum 
+                repudiandae ea nisi similique quisquam 
+                minima temporibus praesentium! Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. Necessitatibus beatae velit 
+                illum sunt fuga ipsa cum esse officiis excepturi totam.
+                <a href="http://www.lipsum.com/" >
+                    read more..
+                </a>
+            </p>
+        </div>
+     </div>   
+
+     <!-- Contact section of the page --> 
+     <div id="contact">
+        <h1>Contact Form</h1>
+        <div class="form-container">
+            <form action="#">
+                <div class="form-group">
+                    <label for="title">Mr.</label>
+                    <input type="radio" id="title" name="title" value="" class="form-control" required>
+                    <label for="title">Mrs.</label>
+                    <input type="radio" id="title" name="title" value="" class="form-control" required>
+                    <label for="title">Miss.</label>
+                    <input type="radio" id="title" name="title" value="" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="FirstName">First Name:</label><br>
+                    <input type="text" class="form-control" id="firstName" name="firstName" 
+                        oninvalid="this.setCustomValidity('Please enter first name')"
+                        oninput="this.setCustomValidity('')"
+                    value="" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" class="form-control" id="lastName" name="lastName" 
+                        oninvalid="this.setCustomValidity('Please enter last name')"
+                        oninput="this.setCustomValidity('')" 
+                        value="" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone Number</label><br>
+                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" 
+                    oninvalid="this.setCustomValidity('Please enter your 10 digit mobile Number')"
+                    oninput="this.setCustomValidity('')"
+                    value="" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <button>
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+     </div>
+
+     <!-- footer section of the page -->
+     <footer>
+        <p>Designed by,</p>
+        <p>Reegan Benny</p>
+        <p>reeganbenny@gmail.com</p>
+     </footer>
+</body>
+</html>
